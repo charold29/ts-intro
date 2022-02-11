@@ -1,4 +1,5 @@
 /*
     ===== Código de TypeScript =====
 */
-console.log('Ga');
+
+console.log('gaa');
