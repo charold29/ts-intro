@@ -23,4 +23,3 @@ const personaje:Personaje = {
 personaje.puebloNatal = "Aranjuez";
 
 console.table(personaje);
-
