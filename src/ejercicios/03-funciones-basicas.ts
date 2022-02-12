@@ -19,8 +19,8 @@ function multiplicar(numero:number, base:number, otroNumero?:number){
      
 }
 
-const resultado = multiplicar(10, 10);
-const mul2 = multiplicar(1,2,5)
+const multiplicacion = multiplicar(10, 10);
+const mult = multiplicar(1,2,5)
 
 
-console.log(resultado, mul2);
+console.log(multiplicacion, mult);
