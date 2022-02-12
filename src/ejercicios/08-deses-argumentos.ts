@@ -2,7 +2,7 @@
     ===== Código de TypeScript =====
 */
 
-interface Producto {
+export interface Producto {
     desc:string;
     precio:number;
 }
@@ -31,7 +31,7 @@ const tablet:Producto = {
 // }
 
 // 2da forma
-function calcularISV(products: Producto[]): number[] {
+export function calcularISV(products: Producto[]): number[] {
     const total = products.reduce( (acumulator, next) => acumulator += next.precio, 0);
     return [total, total * 0.10];
 }
@@ -59,7 +59,7 @@ const articulos = [telefono,tablet];
 
 // 2da forma
 const [,isv]= calcularISV(articulos);
-console.log('isv :', isv);
+// console.log('isv :', isv);
 
 // 3era forma
-console.log('isvArrow :', calcularISVArrow(articulos));
+// console.log('isvArrow :', calcularISVArrow(articulos));
