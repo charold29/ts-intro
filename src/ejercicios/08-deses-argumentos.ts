@@ -17,6 +17,7 @@ const tablet:Producto = {
     precio: 2500
 }
 
+// 1era forma
 // function calculaISV(productos:Producto[]):number {
 
 //     let total = 0;
@@ -28,11 +29,14 @@ const tablet:Producto = {
 //     return total * 0.10;
 
 // }
+
+// 2da forma
 function calcularISV(products: Producto[]): number[] {
     const total = products.reduce( (acumulator, next) => acumulator += next.precio, 0);
     return [total, total * 0.10];
 }
 
+// 3era forma
 const calcularISVArrow = (prods:Producto[]):number => {
     
     let total = 0;
@@ -48,9 +52,14 @@ const calcularISVArrow = (prods:Producto[]):number => {
     return total*0.10;
 }
 
-
 const articulos = [telefono,tablet];
 
+// 1era forma
+// const isv = calcularISV(articulos);
+
+// 2da forma
 const [,isv]= calcularISV(articulos);
 console.log('isv :', isv);
+
+// 3era forma
 console.log('isvArrow :', calcularISVArrow(articulos));
